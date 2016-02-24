@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment One</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+</head>
+<body>
+	<section>
+	<h1>Please Enter Your Details for Dating site </h1>
+	<form>
+		<fieldset>
+			<legend>Your Face</legend>
+			
+			<label for="pictureFile">Your Image:</label>
+			<input type="file" id="pictureFile" name="file"required ><br>
+			<label>Image preview:</label>
+			<img id="preview">
+
+			
+		</fieldset>
+		<fieldset>
+			<legend>Your general details</legend>
+
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" required><br>
+
+			<label for="gender">Gender</label>
+			<input type="radio" value="Male" id="gender" required> Male
+			<input type="radio" value="Female" id="gender" required>Female<br>
+
+			<label for="age">Age</label>
+			<input type="number" min="0" max="99" value="18" id="age" name="age" required=""><br>
+			<label for="date">Date of birth</label>
+			<input type="date" id="date" name="date"><br>
+			<label for="color">Faviourite color</label>
+			<input type="color" id="color" name="color"><br>
+			<label for="country">Which country</label>
+			<select id="country">
+				<option value="UK">UK</option>
+  				<option value="US">US</option>
+				<option value="Iran">Iran</option>
+				<option value="Germany">Germany</option>
+				<option value="France">France</option>
+				<option value="empty" selected>no contury </option>
+			</select>
+		</fieldset>
+		<fieldset id="ind">
+			<legend>Your indicators</legend>
+
+			<label for="height">Height:</label>
+			<span class="big">Short</span> <input type="range" min="0" max="100" id="hight" name="height"><span class="big">Tall</span> <br>
+			<label for="money">Wealth:</label>
+			<span class="big">Poor</span><input type="range" min="0" max="100" id="money" name="wealth"><span class="big">Rich</span><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Your contact information</legend>
+
+			<label for="mail">Email:</label>
+			<input type="email" id="mail" name="email"><br>
+			
+
+			<label for="tel">Mobile:</label>
+			<input type="tel" id="tel" name="tel"><br>
+
+			<label for="address">Address:</label>
+			<textarea rows= "3" cols= "50" id="adreess"></textarea> <br>
+
+			<label for="contactMethod">Methods of contact:</label>
+			<input type="checkbox" id="contactMethod" value="Email">Email
+			<input type="checkbox" id="contactMethod" value="Whatsapp">Whatsapp
+			<input type="checkbox" id="contactMethod" value="In app chat">In app chats
+
+
+			
+		</fieldset>
+		
+		<input type="submit" value="Submit" >
+	</form>
+	</section>
+
+	<script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
+</html>
